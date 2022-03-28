@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", PaintDB);
 
 actitiesListUI.addEventListener("click", (e) => {
   e.preventDefault();
-  const text = e.target.offSetParent.childNodes[1].innerHTMLL;
+  const text = e.target.parentNode.parentNode.childNodes[1].innerHTML;
   if (e.target.innerHTML === "done") {
   }
   if (e.target.innerHTML === "delete") {
