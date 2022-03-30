@@ -19,15 +19,17 @@ const SaveDB = () => {
 const PaintDB = () => {
   actitiesListUI.innerHTML = "";
   activitiesArray = JSON.parse(localStorage.getItem("rutine"));
-  if (activitiesArray === null) {
+  if (activitiesArray == null) {
     activitiesArray = [];
   } else {
     activitiesArray.forEach((element) => {
-     if (element.status) {
-      actitiesListUI.innerHTML += `<div class="alert alert-success" role="alert"><i class="material-icons float-left mr-2"> accessibility </i><b>${element.activity}</b> - ${element.status}<span class="float-right"><i class="material-icons"> done </i><i class="material-icons"> delete </i></span></div>`;
+     if (element.status) 
+     {
+      actitiesListUI.innerHTML += `<div class="alert alert-success" role="alert"><i class="material-icons float-left mr-2"> accessibility </i><b>${element.activity}</b> - ${element.status}<span class="float-right"><i class="material-icons">done</i><i class="material-icons">delete</i></span></div>`;
      }
-     else {
-      actitiesListUI.innerHTML += `<div class="alert alert-danger" role="alert"><i class="material-icons float-left mr-2"> accessibility </i><b>${element.activity}</b> - ${element.status}<span class="float-right"><i class="material-icons"> done </i><i class="material-icons"> delete </i></span></div>`;
+     else 
+     {
+      actitiesListUI.innerHTML += `<div class="alert alert-danger" role="alert"><i class="material-icons float-left mr-2"> accessibility </i><b>${element.activity}</b> - ${element.status}<span class="float-right"><i class="material-icons">done</i><i class="material-icons">delete</i></span></div>`;
      }
       
     });
@@ -37,7 +39,7 @@ const PaintDB = () => {
 const DeleteDB = (activity) => {
   let indexArray;
   activitiesArray.forEach((element, index) => {
-    if (element.activity === activity) {
+    if (element.activity == activity) {
       indexArray = index;
     }
   });
@@ -47,7 +49,7 @@ const DeleteDB = (activity) => {
 
 const EditDB = (activity) => {
  let indexArray = activitiesArray.findIndex((element) => {
-  return element.activity === activity
+  return element.activity == activity
  });
  activitiesArray[indexArray].status = true;
  SaveDB();
@@ -66,9 +68,11 @@ document.addEventListener("DOMContentLoaded", PaintDB);
 actitiesListUI.addEventListener("click", (e) => {
   e.preventDefault();
   const text = e.target.parentNode.parentNode.childNodes[1].innerHTML;
-  if (e.target.innerHTML === "done") {
+  const button = e.target.innerHTML;
+  if (button == "done") {
+    EditDB(text);
   }
-  if (e.target.innerHTML === "delete") {
+  if (button == "delete") {
     DeleteDB(text);
   }
 });
