@@ -14,20 +14,11 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style/style.css">
+    <script type="module" defer src="../components/main.js"></script>
     <title>CRUD GYM</title>
   </head>
   <body>
-    <div class="container mt-5">
-      <h3>
-        <i class="material-icons"> accessibility </i>
-        GYM
-      </h3>
-      <form id="form">
-        <input type="text" id="activity" class="frmcontrol my-3" />
-        <button type="submit" class="btn btnprimary">save</button>
-      </form>
-      <div id="activitieslist" class="my-3"></div>
-    </div>
-    <script src="/components/app.js"></script>
+    <div id="root"></div>
   </body>
 </html>
