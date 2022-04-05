@@ -1,8 +1,5 @@
-const Title = (text) => {
-   return `<h3 class="title">
-    <i class="material-icons"> accessibility </i>
-    ${text}
-  </h3>`;
+const Title = (nClass, text) => {
+  return `<h1 class="${nClass}">${text}</h1>`;
 };
 
 export default Title;

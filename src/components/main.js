@@ -6,15 +6,15 @@ import Button from "./interface/Button.js";
 import Rutine from "./Rutine.js";
 
 const main = () => {
-  componentsCreation();
+  //componentsCreation();
 };
 
 const componentsCreation = () => {
-  document.getElementById("root").innerHTML = Container(
+  document.getElementById("root").innerHTML += Container(
     "container",
     "container"
   );
-  document.getElementById("container").innerHTML = Title("GYM");
+  document.getElementById("container").innerHTML = Title("title", "GYM");
   document.getElementById("container").innerHTML += Form("form", "form");
   document.getElementById("form").innerHTML = TextBox("activity", "frmcontrol");
   document.getElementById("form").innerHTML += Button("btnprimary", "save");
