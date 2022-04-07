@@ -6,7 +6,7 @@ import Button from "./interface/Button.js";
 import Rutine from "./Rutine.js";
 
 const main = () => {
-  //componentsCreation();
+  componentsCreation();
 };
 
 const componentsCreation = () => {
@@ -14,9 +14,13 @@ const componentsCreation = () => {
     "container",
     "container"
   );
-  document.getElementById("container").innerHTML = Title("title", "GYM");
+  document.getElementById("container").innerHTML = Title("title", "Tasks");
   document.getElementById("container").innerHTML += Form("form", "form");
-  document.getElementById("form").innerHTML = TextBox("activity", "frmcontrol");
+  document.getElementById("form").innerHTML = TextBox(
+    "activity",
+    "frmcontrol",
+    "enter your task"
+  );
   document.getElementById("form").innerHTML += Button("btnprimary", "save");
   document.getElementById("container").innerHTML += Container(
     "activitieslist",
