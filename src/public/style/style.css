@@ -7,7 +7,7 @@
 }
 :root {
   --padding-container: 100px 0;
-  --color-title: rgb(51, 49, 49);
+  --color-title:#504e4d;
 }
 
 body {
@@ -20,7 +20,10 @@ body {
   height: 120px;
   margin: 0 auto;
   overflow: hidden;
-  padding: var(--padding-container);
+  --padding-container: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .headboard,
@@ -32,27 +35,20 @@ body {
   position: relative;
   display: grid;
   grid-template-rows: 100px 1fr;
-  color: rgb(51, 49, 49);
 }
 
 .headboard::before {
   content: "";
-  position: absolute;
+  position:absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-image: url("../image/ilustracion.jpg");
-  background-size: cover;
+
+  background-size:120%;
   clip-path: circle(63.6% at 51% 13%);
   z-index: -1;
-}
-
-.navegation {
-  --padding-container: 0;
-  height: 100%;
-  display: flex;
-  align-items: center;
 }
 
 .navTitle {
@@ -73,8 +69,13 @@ body {
 }
 
 .navLinks {
-  color:rgb(51, 49, 49);
   text-decoration: none;
+  box-shadow: none;
+  color:rgb(51, 49, 49);
+}
+
+.navLinks:hover{
+  color:rgb(51, 49, 49);
 }
 
 #navMenu {
@@ -101,10 +102,12 @@ body {
 
 .headTitle {
   font-size: 3rem;
+  color: #403B35;
 }
 
 .headParagraph {
   margin-bottom: 80px;
+  font-size: 20px;
 }
 
 .start {
@@ -115,6 +118,10 @@ body {
   text-decoration: none;
   padding: 13px 30px;
   border-radius: 30px;
+}
+
+.start:hover{
+  color: azure;
 }
 
 /**PRINCIPAL**/
@@ -145,10 +152,6 @@ body {
 .alert {
   margin: 1rem;
   border-radius: 25px;
-}
-
-#title {
-  margin-bottom: 3rem;
 }
 
 .btnprimary {
@@ -251,11 +254,11 @@ body {
 }
 
 .footerCopy{
-    --padding-container:30px;
-    text-align: center;
+ --padding-container:30px;
+  text-align: center;
 }
 
 .footerSocial{
-    text-align: center;
-    padding-bottom: 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
 }
