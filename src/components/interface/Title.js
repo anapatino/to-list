@@ -1,5 +1,5 @@
-const Title = (id, text) => {
-  return `<h1 id="${id}">${text}</h1>`;
+const title = (id, text) => {
+  return `<h2 id="${id}" class="${id}">${text}</h2>`;
 };
 
-export default Title;
+export default title;

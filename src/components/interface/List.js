@@ -1,9 +1,9 @@
-const ListUl = (id, nClass) => {
+const listUl = (id, nClass) => {
   return `<ul id="${id} class="${nClass}"></ul>`;
 };
 
-const ListLi = (id, nClass) => {
+const listLi = (id, nClass) => {
   return `<li id="${id} class="${nClass}"></li>`;
 };
 
-export { ListUl, ListLi };
+export { listUl, listLi };

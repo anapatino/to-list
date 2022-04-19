@@ -1,5 +1,5 @@
-const Icon = (id, nclass, text) => {
+const icon = (id, nclass, text) => {
   return `<i id="${id}" class="${nclass}">${text}</i>`;
 };
 
-export default Icon;
+export default icon;
