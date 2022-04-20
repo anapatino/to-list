@@ -1,5 +1,5 @@
-const Form = (id, nclass) => {
-    return `<form id="${id}" class="${nclass}"></form>`;
+const form = (name) => {
+  return `<form id="${name}" class="${name}"></form>`;
 };
 
-export default  Form;
+export default form;

@@ -1,5 +1,5 @@
-const container = (id, nclass) => {
-  return `<div id="${id}" class="${nclass}"></div>`;
+const container = (name) => {
+  return `<div id="${name}" class="${name}"></div>`;
 };
 
 export default container;

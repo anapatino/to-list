@@ -1,5 +1,5 @@
-const navegation = (id, nclass) => {
-  return `<nav id="${id}" class="${nclass}" ></nav>`;
+const navegation = (name) => {
+  return `<nav id="${name}" class="${name}" ></nav>`;
 };
 
 export default navegation;

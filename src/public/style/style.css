@@ -256,6 +256,7 @@ body {
 .footerCopy{
  --padding-container:30px;
   text-align: center;
+  margin: 0;
 }
 
 .footerSocial{
