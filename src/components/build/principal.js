@@ -1,8 +1,7 @@
 import title from "../interface/Title.js";
 import container from "../interface/Container.js";
 import form from "../interface/Form.js";
-import textBox from "../interface/TextBox.js";
-import button from "../interface/Button.js";
+import { button, textBox } from "../interface/Input.js";
 import Rutine from "../Rutine.js";
 import { headboard, main, footer } from "../interface/Elements.js";
 

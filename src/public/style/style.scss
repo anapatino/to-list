@@ -1,0 +1,102 @@
+@import "utilities";
+//headboard
+.headboard {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 50px;
+  display: grid;
+  grid-template-rows: 100px 30rem;
+}
+//navegation
+.navegation {
+  overflow: hidden;
+  padding-bottom: 0;
+  margin-top: 20px;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  //border-bottom: 1px solid;;
+}
+.nListItems {
+  margin-left: auto;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 2em;
+}
+@mixin itemsList {
+  list-style: none;
+}
+.nItem1,
+.nItem2,
+.nItem3 {
+  @include itemsList();
+}
+.nLinks {
+  transition: 0.2s ease-in;
+}
+.nLinks:hover {
+  color: $secundaryColor;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 19px;
+}
+.nListItems a {
+  color: black;
+  text-decoration: none;
+}
+.nMenu {
+  margin-left: auto;
+  cursor: pointer;
+  display: none;
+}
+#nClose {
+  display: none;
+}
+#iconMenu {
+  display: block;
+  width: 30px;
+}
+#nTitle {
+  letter-spacing: 2px;
+}
+//section principal
+.hSection {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+#picture {
+  grid-column: 2;
+}
+#nTitle {
+  font-size: 30px;
+}
+.sectionContent {
+  padding: $paddingContainer;
+}
+.headTitle {
+  text-align: left;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.headParagraph {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.start {
+  background-color: $secundaryColor;
+  width: 160px;
+  padding: 10px;
+  border: none;
+  border-radius: 19px;
+  letter-spacing: 2px;
+  transition-duration: 0.2s;
+  color: aliceblue;
+}
+.start:hover {
+  background-color: $sixthColor;
+}

@@ -1,5 +1,5 @@
 const link = (nclass, title, href = "") => {
-  return `<a href="#${href}" class="${nclass}" >${title}</a>`;
+  return `<a href="#${href}" class="${nclass}">${title}</a>`;
 };
 
 const linkSocial = (nclass, href, root) => {
