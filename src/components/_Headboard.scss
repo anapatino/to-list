@@ -1,5 +1,3 @@
-@import "utilities";
-//headboard
 .headboard {
   width: 90%;
   max-width: 1200px;
@@ -17,7 +15,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-  //border-bottom: 1px solid;;
 }
 .nListItems {
   margin-left: auto;
@@ -27,13 +24,8 @@
   grid-auto-columns: max-content;
   gap: 2em;
 }
-@mixin itemsList {
+.nItem {
   list-style: none;
-}
-.nItem1,
-.nItem2,
-.nItem3 {
-  @include itemsList();
 }
 .nLinks {
   transition: 0.2s ease-in;
