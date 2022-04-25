@@ -2,9 +2,7 @@ export const Headboard = () => {
   return /*html*/ `<header class="headboard">
   <nav class="navegation" id="navegation">
     <div class="nLogo">
-      <h2 class="nTitle" id="nTitle">
-        ToList
-      </h2>
+      <img class="pictureLogo" src="/src/image/logo.png" ></img>
     </div>
     <ul class="nListItems">
       <li class="nItem">
