@@ -1,0 +1,15 @@
+.hSection {
+  grid-template-columns: repeat(auto-fit, minmax(5fr, 1fr));
+}
+
+@media (max-width: 1100px) {
+  #iconMenu {
+    display: block;
+  }
+  #iconMenu {
+    display: block;
+  }
+  .nListItems {
+    display: none;
+  }
+}

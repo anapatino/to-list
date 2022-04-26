@@ -1,3 +1,4 @@
+@import "grid";
 .headboard {
   width: 90%;
   max-width: 1200px;
@@ -49,12 +50,15 @@
   cursor: pointer;
   display: none;
 }
-#nClose {
+#iconClose {
   display: none;
+  cursor: pointer;
 }
 #iconMenu {
-  display: block;
+  display: none;
   width: 30px;
+  cursor: pointer;
+  margin-left: 20px;
 }
 #nTitle {
   letter-spacing: 2px;
@@ -62,10 +66,12 @@
 //section principal
 .hSection {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 5fr;
 }
 #picture {
   grid-column: 2;
+  display: flex;
+  align-items: center;
 }
 #nTitle {
   font-size: 30px;
