@@ -2,7 +2,7 @@ export const Headboard = () => {
   return /*html*/ `<header class="headboard">
   <nav class="navegation" id="navegation">
     <div class="nLogo">
-      <img class="pictureLogo" src="/src/image/logo.png" ></img>
+      <img class="pictureLogo" src="../src/image/logo.png" ></img>
     </div>
     <ul class="nListItems">
       <li class="nItem">
@@ -20,9 +20,9 @@ export const Headboard = () => {
           Contact
         </a>
       </li>
-      <img src="/src/image/close.png" id="iconClose"></img>
+      <img src="../src/image/close.png" id="iconClose"></img>
     </ul>
-    <img src="/src/image/menu.png" id="iconMenu"></img>
+    <img src="../src/image/menu.png" id="iconMenu"></img>
   </nav>
   <section class="hSection">
     <div id="sectionContent" class="sectionContent">
@@ -33,7 +33,7 @@ export const Headboard = () => {
       </p>
       <button class="start">Start Now </button>
     </div>
-    <img src="/src/image/ilustrationPh.png" id="picture"></img>
+    <img src="../src/image/ilustrationPh.png" id="picture"></img>
   </section>
 </header>`;
 };
