@@ -20,9 +20,8 @@ export const Headboard = () => {
           Contact
         </a>
       </li>
-      <img src="../src/image/close.png" id="iconClose"></img>
     </ul>
-    <img src="../src/image/menu.png" id="iconMenu"></img>
+    <img src="../src/image/menu.png" id="iconMenu" class="iconMenu"></img>
   </nav>
   <section class="hSection">
     <div id="sectionContent" class="sectionContent">
