@@ -44,28 +44,28 @@ export default class Rutine {
 
   checkStatus = (element) => {
     if (element.status == "Completed") {
-      this.actitiesListUI.innerHTML += `<div class="alert alert-alert" role="alert"><i class="material-icons float-left mr-2">check_circle_outline</i><b id="${element.id}">${element.activity}</b> - ${element.status}<span class="float-right"><i class="material-icons clickable">done</i><i class="material-icons clickable">delete</i></span></div>`;
+      this.actitiesListUI.innerHTML += `<div class="alert alert-alert" role="alert"><i class="material-symbols-outlined float-left mr-2">check_circle_outline</i><b id="${element.id}">${element.activity}</b> - ${element.status}<i class="float-right material-symbols-outlined">delete</i></div>`;
     } else {
-      this.actitiesListUI.innerHTML += `<div class="alert alert-dark" role="alert"><i class="material-icons float-left mr-2">radio_button_unchecked</i><b id="${element.id}">${element.activity}</b> - ${element.status}<span class="float-right"><i class="material-icons clickable">done</i><i class="material-icons clickable">delete</i></span></div>`;
+      this.actitiesListUI.innerHTML += `<div class="alert alert-warning" role="alert"><i class="material-symbols-outlined float-left mr-2">radio_button_unchecked</i><b id="${element.id}">${element.activity}</b> - ${element.status}<i class="float-right material-symbols-outlined">delete</i></div>`;
     }
   };
 
   deleteDB = (id) => {
-    let indexArray;
-    this.activitiesArray.forEach((element, index) => {
-      if (element.id == id) {
-        indexArray = index;
-      }
+    const indexArray = this.activitiesArray.findIndex((element) => {
+      return element.id === id;
     });
     this.activitiesArray.splice(indexArray, 1);
     this.saveDB();
   };
 
-  editDB = (id) => {
-    let indexArray = this.activitiesArray.findIndex((element) => {
+  toggleStatusChecked = (id) => {
+    const indexArray = this.activitiesArray.findIndex((element) => {
       return element.id == id;
     });
-    this.activitiesArray[indexArray].status = "Completed";
+
+    const currentStatus = this.activitiesArray[indexArray].status;
+    this.activitiesArray[indexArray].status =
+      currentStatus === "Completed" ? "Peding" : "Completed";
     this.saveDB();
   };
 
@@ -82,7 +82,7 @@ export default class Rutine {
 
   getRutineRoute = (e) => {
     if (isFirefox()) {
-      return e.target.parentNode.parentNode.childNodes[1].id;
+      return e.target.parentNode.childNodes[1].id;
     }
     // chrome
     return e.path[2].childNodes[1].id;
@@ -91,17 +91,19 @@ export default class Rutine {
   addModifyRutineEvent = () => {
     this.actitiesListUI.addEventListener("click", (e) => {
       e.preventDefault();
-      const id = this.getRutineRoute(e);
       const button = e.target.innerHTML;
+      const id = this.getRutineRoute(e);
       this.chooseOption(id, button);
     });
   };
 
   chooseOption = (id, button) => {
-    if (button == "done") {
-      this.editDB(id);
-    }
-    if (button == "delete") {
+    if (
+      button == "radio_button_unchecked" ||
+      button == "check_circle_outline"
+    ) {
+      this.toggleStatusChecked(id);
+    } else if (button == "delete") {
       this.deleteDB(id);
     }
   };

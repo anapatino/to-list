@@ -1,0 +1,53 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 8rem;
+}
+.form {
+  grid-row: 2;
+  grid-column: 1;
+}
+.activitieslist {
+  overflow: auto;
+  height: 400px;
+  border-radius: 30px;
+  grid-row: 2;
+  grid-column: 2;
+}
+.alert {
+  margin: 1rem;
+  border-radius: 25px;
+}
+
+.title {
+  margin-bottom: 1rem;
+  grid-column: 1;
+}
+.btnprimary {
+  background-color: $fourthColor;
+  width: 120px;
+  padding: 10px;
+  border: none;
+  border-radius: 19px;
+  letter-spacing: 2px;
+  margin-left: 2rem;
+  transition-duration: 0.2s;
+  color: aliceblue;
+  cursor: pointer;
+}
+.btnprimary:hover {
+  background-color: $primaryColor;
+}
+.frmcontrol {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  border-bottom-color: gray;
+  font-size: 1rem;
+  padding: 0.6em 0.6em;
+}
+
+.material-symbols-outlined {
+  cursor: pointer;
+}

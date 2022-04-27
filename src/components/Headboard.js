@@ -11,7 +11,7 @@ export const Headboard = () => {
         </a>
       </li>
       <li class="nItem">
-        <a href="#root" class="nLinks">
+        <a href="#title" class="nLinks">
           Planning
         </a>
       </li>

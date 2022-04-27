@@ -3,7 +3,7 @@ import { App } from "./App.js";
 
 const main = () => {
   render(App);
-  //createRutine();
+  createRutine();
 };
 
 const render = (app) => {
