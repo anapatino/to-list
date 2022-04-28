@@ -1,7 +1,3 @@
-.hSection {
-  grid-template-columns: repeat(auto-fit, minmax(5fr, 1fr));
-}
-
 @mixin size($mxHeight, $mxWidth) {
   max-height: $mxHeight;
   max-width: $mxWidth;
@@ -67,7 +63,7 @@
   }
   .nListItems {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 90px;
     left: 0;
     background: rgb(255, 255, 255);
