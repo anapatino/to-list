@@ -2,6 +2,62 @@
   grid-template-columns: repeat(auto-fit, minmax(5fr, 1fr));
 }
 
+@mixin size($mxHeight, $mxWidth) {
+  max-height: $mxHeight;
+  max-width: $mxWidth;
+}
+
+@mixin configurationText($sTitle, $sParagraph, $start) {
+  .headTitle {
+    font-size: $sTitle;
+  }
+  .headParagraph {
+    font-size: $sParagraph;
+  }
+  .start {
+    max-width: $start;
+  }
+}
+
+@mixin configurationImg($mheight, $mwidth, $height, $width) {
+  .contentPicture {
+    @include size($mheight, $mwidth);
+    align-items: flex-start;
+  }
+  #picture {
+    width: $height;
+    height: $width;
+  }
+}
+
+@mixin button($height, $pad, $space, $size) {
+  .start {
+    height: $height;
+    padding: $pad;
+    letter-spacing: $space;
+    font-size: $size;
+  }
+}
+
+@media (max-width: 1300px) {
+  @include configurationText(3.6rem, 18px, 120px);
+  @include configurationImg(780px, 580px, 770px, 570px);
+}
+
+@media (max-width: 1180px) {
+  @include configurationText(3.2rem, 18px, 120px);
+  @include configurationImg(760px, 560px, 720px, 520px);
+}
+@media (max-width: 1040px) {
+  @include configurationImg(700px, 500px, 680px, 460px);
+  .headTitle {
+    margin-bottom: 10px;
+  }
+  .headParagraph {
+    margin-bottom: 15px;
+  }
+}
+
 @media (max-width: 1100px) {
   #iconMenu {
     display: block;
@@ -38,4 +94,31 @@
   .nListItems.active {
     transform: translateX(0);
   }
+}
+
+@media (max-width: 900px) {
+  @include configurationText(2.5rem, 12px, 130px);
+  @include configurationImg(600px, 500px, 550px, 350px);
+  @include button(40px, 0, 1.2px, 15px);
+}
+
+@media (max-width: 700px) {
+  @include configurationText(2rem, 10px, 120px);
+  @include configurationImg(400px, 300px, 3500px, 250px);
+}
+
+@media (max-width: 600px) {
+  @include configurationText(1.5rem, 10px, 100px);
+  @include button(20px, 0, 1.2px, 10px);
+}
+
+@media (max-width: 490px) {
+  @include configurationText(2rem, 12px, 120px);
+  .contentPicture {
+    display: none;
+  }
+  .hSection {
+    grid-template-columns: 100% 0;
+  }
+  @include button(30px, 0, 1.2px, 10px);
 }

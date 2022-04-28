@@ -32,7 +32,10 @@ export const Headboard = () => {
       </p>
       <button class="start">Start Now </button>
     </div>
-    <img src="../src/image/ilustrationPh.png" id="picture"></img>
+    <div class="contentPicture">
+       <img src="../src/image/ilustrationPh.png" id="picture">
+      </img>
+    </div>
   </section>
 </header>`;
 };

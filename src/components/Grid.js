@@ -5,3 +5,10 @@ export const displayMenu = () => {
     menu.classList.toggle("active");
   });
 };
+
+export const fixedNavegation = () => {
+  const navegation = document.querySelector(".navegation");
+  window.addEventListener("scroll", () => {
+    navegation.classList.toggle("active", window.scrollY > 0);
+  });
+};
