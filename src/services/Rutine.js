@@ -52,7 +52,7 @@ export default class Rutine {
 
   deleteDB = (id) => {
     const indexArray = this.activitiesArray.findIndex((element) => {
-      return element.id === id;
+      return element.id == id;
     });
     this.activitiesArray.splice(indexArray, 1);
     this.saveDB();
