@@ -17,12 +17,11 @@
   margin-top: 20px;
   height: 60px;
   width: 100%;
-  display: flex;
-  text-align: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 45%;
 }
 .fNavegationList {
-  margin-left: auto;
+  margin: auto;
   padding: 0;
   display: grid;
   grid-auto-flow: column;
@@ -53,5 +52,5 @@
 .footerCopy {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  align-items: center;
 }
