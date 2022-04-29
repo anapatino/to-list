@@ -1,0 +1,57 @@
+.footer {
+  background: #f0ca5b;
+  margin: auto;
+  height: 260px;
+}
+.fContainer {
+  margin: auto 100px;
+  padding: 20px 20px 0;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.footerContainer {
+  padding: auto;
+}
+.fNavegation {
+  overflow: hidden;
+  margin-top: 20px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.fNavegationList {
+  margin-left: auto;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 2em;
+  list-style: none;
+}
+.nItems a {
+  color: black;
+  list-style: none;
+}
+.navLinks {
+  transition: 0.2s ease-in;
+}
+.navLinks:hover {
+  color: $secundaryColor;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 19px;
+}
+.fContainerSocial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.footerCopy {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
