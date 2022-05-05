@@ -6,12 +6,12 @@ export const Headboard = () => {
     </div>
     <ul class="nListItems">
       <li class="nItem">
-        <a href="#navegation" class="nLinks">
+        <a href="#headboard" class="nLinks">
           Introduction
         </a>
       </li>
       <li class="nItem">
-        <a href="#title" class="nLinks">
+        <a href="#main" class="nLinks">
           Planning
         </a>
       </li>
@@ -39,3 +39,4 @@ export const Headboard = () => {
   </section>
 </header>`;
 };
+
