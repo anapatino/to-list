@@ -1,12 +1,12 @@
 import Rutine from "./services/Rutine.js";
-import { displayMenu, fixedNavegation } from "./components/Grid.js";
+import { displayMenu, fixedNavegation } from "./services/Events.js";
 import { App } from "./App.js";
 
 const main = () => {
   render(App);
   createRutine();
   displayMenu();
-  fixedNavegation();
+  //fixedNavegation();
 };
 
 const render = (app) => {
