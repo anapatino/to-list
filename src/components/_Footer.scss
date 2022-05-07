@@ -1,6 +1,6 @@
 .footer {
-  background: #f0ca5b;
-  margin: auto;
+  background: #BD5ADA;
+  margin-top: 17rem;
   height: 260px;
 }
 .fContainer {
@@ -30,7 +30,7 @@
   list-style: none;
 }
 .nItems a {
-  color: black;
+  color: white;
   list-style: none;
 }
 .navLinks {
@@ -53,4 +53,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.footerTitle{
+  color: white;
+}
+.footerCopy{
+  color: white;
 }
