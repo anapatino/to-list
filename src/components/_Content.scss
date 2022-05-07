@@ -1,0 +1,65 @@
+.content {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 10px;
+  }
+.cardSection{
+    padding: $paddingContainer;
+    text-align: center;
+}
+.listCards{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 300px;
+    height: 320px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border: 0;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+.card img{
+    width: 60px;
+    margin-bottom: 17px;
+}
+.titleCard{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+//Section more information
+
+.informationSection{
+  padding: $paddingContainer;
+}
+.informationContent{
+  display: flex;
+}
+.informationPicture{
+  width: 140%;
+}
+.informationPicture img{
+  padding: 0;
+  width: 480px;
+  transition: .3s;
+}
+.informationPicture img:hover{
+  transform: scale(1.1);
+}
+.informationContent .descriptionContent{
+  margin-top: 10%;
+}
+.informationContent .descriptionContent p{
+  margin-bottom: 40px;
+  font-size: 20px;
+}
