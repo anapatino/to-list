@@ -25,7 +25,7 @@ export const Footer = () => {
       <a href="mailto:asofiapatinoaliendra@gmail.com"  target="_blank" class="fIcons"><img src="../src//image/email.svg" class="fIcons"></a>
     </div>
   </section>
- <h6 class="footerCopy">All rights reserved &copy; Ana Sofia Patino Aliendra</h6>
+ <h6 class="footerCopy">All rights reserved &copy; Ana Patiño & David Ravelo</h6>
 </div>
 </footer>`;
 };

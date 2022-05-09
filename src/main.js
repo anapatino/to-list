@@ -4,7 +4,7 @@ import { App } from "./App.js";
 
 const main = () => {
   render(App);
-  createRutine();
+  //createRutine();
   displayMenu();
   //fixedNavegation();
 };

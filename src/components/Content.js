@@ -1,30 +1,29 @@
 export const Content = () => {
-    return /*html*/ `<main class="content">
-        <section class="cardSection">
-            <h2>Why Choose Tolist?</h2>
-            <div class="listCards">
-                <div class="card">
-                    <img src="../src/image/responsive.png" alt="">
-                    </img>
-                    <span class="titleCard">Responsive</span>
+  return /*html*/ `<main class="content">
+    <section class="cardSection">
+        <h2>Why Choose Tolist?</h2>
+        <div class="listCards">
+            <div class="card">
+                <img src="../src/image/responsive.png" alt="">
+                </img>
+                <span class="titleCard">Responsive</span>
                     <p class="descriptionCard">It gives the user the best possible experience, no matter what device they are using.</p>
-                </div>
-                <div class="card">
-                    <img src="../src/image/fast.png" alt="">
-                    </img>
-                    <span class="titleCard">Super Fast</span>
-                    <p class="descriptionCard">Your time is valuable, that's why we implement strategies so you can use them without delay.</p>
-                </div>
-                <div class="card">
-                    <img src="../src/image/security.png" alt="">
-                    </img>
-                    <span class="titleCard">Security</span>
-                    <p class="descriptionCard">We know that yout information is the most important thing that's why we take care of the security of our users.</p>
-                </div>
             </div>
-        </section>
-        
-        <section class="informationSection">
+            <div class="card">
+                <img src="../src/image/fast.png" alt="">
+                </img>
+                <span class="titleCard">Super Fast</span>
+                <p class="descriptionCard">Your time is valuable, that's why we implement strategies so you can use them without delay.</p>
+            </div>
+            <div class="card">
+                <img src="../src/image/security.png" alt="">
+                </img>
+                <span class="titleCard">Security</span>
+                <p class="descriptionCard">We know that yout information is the most important thing that's why we take care of the security of our users.</p>
+            </div>
+        </div>
+    </section>
+    <section class="informationSection">
         <div class="informationContent">
             <div class="informationPicture">
                 <img src="../src/image/intro.png">
@@ -36,6 +35,6 @@ export const Content = () => {
                 </p>
             <button class="start">Start Now </button></div>
         </div>
-        </section>
-    </main>`;
+    </section>
+</main>`;
 };
