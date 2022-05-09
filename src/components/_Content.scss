@@ -1,65 +1,63 @@
 .content {
-    width: 90%;
-    max-width: 1400px;
-    margin: auto;
-    padding: 10px;
-  }
-.cardSection{
-    padding: $paddingContainer;
-    text-align: center;
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 10px;
 }
-.listCards{
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-between;
+.cardSection {
+  padding: $paddingContainer;
+  text-align: center;
 }
-.card{
-    width: 300px;
-    height: 320px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    border: 0;
-    transition: .3s;
-    cursor: pointer;
+.listCards {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
 }
-
-.card:hover{
+.card {
+  width: 300px;
+  height: 320px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card:hover {
   transform: scale(1.1);
 }
-.card img{
-    width: 60px;
-    margin-bottom: 17px;
+.card img {
+  width: 60px;
+  margin-bottom: 17px;
 }
-.titleCard{
-    font-size: 1.5rem;
-    font-weight: bold;
+.titleCard {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-
 
 //Section more information
 
-.informationSection{
+.informationSection {
   padding: $paddingContainer;
 }
-.informationContent{
+.informationContent {
   display: flex;
 }
-.informationPicture{
+.informationPicture {
   width: 140%;
 }
-.informationPicture img{
+.informationPicture img {
   padding: 0;
   width: 480px;
-  transition: .3s;
+  transition: 0.3s;
 }
-.informationPicture img:hover{
+.informationPicture img:hover {
   transform: scale(1.1);
 }
-.informationContent .descriptionContent{
+.informationContent .descriptionContent {
   margin-top: 10%;
 }
-.informationContent .descriptionContent p{
+.informationContent .descriptionContent p {
   margin-bottom: 40px;
   font-size: 20px;
 }
