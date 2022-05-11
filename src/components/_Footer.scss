@@ -1,11 +1,15 @@
 .footer {
-  background: #bd5ada;
   margin-top: 5rem;
   height: 260px;
+}
+.color {
+  background: #bd5ada;
 }
 .fContainer {
   margin: auto 100px;
   padding: 20px 20px 0;
+}
+.gridRows {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
 }
@@ -17,12 +21,16 @@
   margin-top: 20px;
   height: 60px;
   width: 100%;
+}
+.gridColumn {
   display: grid;
   grid-template-columns: 1fr 45%;
 }
 .fNavegationList {
   margin: auto;
   padding: 0;
+}
+.columnItems {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: max-content;
@@ -30,33 +38,26 @@
   list-style: none;
 }
 .nItems a {
-  color: white;
   list-style: none;
 }
 .navLinks {
   transition: 0.2s ease-in;
 }
 .navLinks:hover {
+  padding: 10px;
   color: $secundaryColor;
   text-decoration: none;
-  padding: 10px;
   border: 1px solid;
   border-radius: 19px;
 }
 .fContainerSocial {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 30px;
 }
-.footerCopy {
+.centerItems {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-.footerTitle {
-  color: white;
-}
-.footerCopy {
+.white {
   color: white;
 }

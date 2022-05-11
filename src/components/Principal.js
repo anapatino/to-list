@@ -8,12 +8,12 @@ export const Principal = () => {
           <input
             type="text"
             id="activity"
-            class="frmcontrol"
+            class="frmcontrol text"
             placeholder="enter your task"
           ></input>
-          <button class="btnprimary">save</button>
+          <button class="btnprimary yellow">save</button>
         </form>
-        <div id="activitieslist" class="activitieslist"></div>
+        <div id="activitieslist" class="activitieslist list"></div>
       </div>
     </main>`;
 };

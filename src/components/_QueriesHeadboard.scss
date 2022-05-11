@@ -26,11 +26,12 @@
   }
 }
 
-@mixin button($height, $pad, $space, $size) {
+@mixin button($height, $pad, $size) {
   .start {
     height: $height;
     padding: $pad;
-    letter-spacing: $space;
+  }
+  .button {
     font-size: $size;
   }
 }
@@ -63,17 +64,17 @@
     right: 20px;
   }
   .nListItems {
-    display: block;
-    position: absolute;
-    top: 90px;
-    left: 0;
-    background: rgb(255, 255, 255);
     width: 100%;
     height: 100vh;
+    padding: 1rem;
+    top: 90px;
+    left: 0;
     right: 0;
+    background: rgb(255, 255, 255);
+    display: block;
+    position: absolute;
     transition: all 0.5s case;
     transform: translateX(-100%);
-    padding: 1rem;
   }
   .nItem {
     padding: 2rem;
@@ -96,7 +97,7 @@
 @media (max-width: 900px) {
   @include configurationText(2.5rem, 12px, 130px);
   @include configurationImg(600px, 500px, 550px, 350px);
-  @include button(40px, 0, 1.2px, 15px);
+  @include button(40px, 0, 15px);
 }
 
 @media (max-width: 700px) {
@@ -106,7 +107,7 @@
 
 @media (max-width: 600px) {
   @include configurationText(1.5rem, 10px, 100px);
-  @include button(20px, 0, 1.2px, 10px);
+  @include button(20px, 0, 10px);
 }
 
 @media (max-width: 490px) {
@@ -117,5 +118,5 @@
   .hSection {
     grid-template-columns: 100% 0;
   }
-  @include button(30px, 0, 1.2px, 10px);
+  @include button(30px, 0, 10px);
 }

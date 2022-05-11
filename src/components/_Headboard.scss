@@ -7,8 +7,6 @@
 //navegation
 .navegation {
   overflow: hidden;
-  padding-bottom: 0;
-  margin: 0;
   margin-top: 20px;
   height: 60px;
   width: 100%;
@@ -22,35 +20,31 @@
   grid-auto-columns: max-content;
   gap: 2em;
 }
+@mixin propertiesLinks($colorHover, $color) {
+  .nLinks {
+    color: $color;
+    transition: 0.2s ease-in;
+  }
+  .nLinks:hover {
+    color: $colorHover;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 19px;
+    text-decoration: none;
+  }
+}
 .nItem {
   list-style: none;
+  @include propertiesLinks($secundaryColor, black);
 }
 .nLinks {
-  transition: 0.2s ease-in;
-}
-.nLinks:hover {
-  color: $secundaryColor;
-  padding: 10px;
-  border: 1px solid;
-  border-radius: 19px;
-}
-.nListItems a {
-  color: black;
-  text-decoration: none;
-}
-.nMenu {
-  margin-left: auto;
-  cursor: pointer;
-  display: none;
+  height: 45px;
 }
 #iconMenu {
   display: none;
   width: 30px;
-  cursor: pointer;
   margin-left: 20px;
-}
-#nTitle {
-  letter-spacing: 2px;
+  cursor: pointer;
 }
 //section principal
 .hSection {
@@ -65,9 +59,6 @@
   display: flex;
   align-items: center;
 }
-#nTitle {
-  font-size: 30px;
-}
 .sectionContent {
   padding: $paddingContainer;
 }
@@ -75,23 +66,27 @@
   text-align: left;
   font-size: 4rem;
   margin-bottom: 30px;
-  letter-spacing: 2px;
 }
 .headParagraph {
   margin-bottom: 40px;
   font-size: 20px;
 }
 .start {
-  background-color: $secundaryColor;
   width: 160px;
   padding: 10px;
+}
+.button {
+  background-color: $secundaryColor;
   border: none;
   border-radius: 19px;
-  letter-spacing: 2px;
+  letter-spacing: 1.2px;
   transition-duration: 0.2s;
   color: aliceblue;
   cursor: pointer;
 }
 .start:hover {
   background-color: $sixthColor;
+}
+.letter {
+  letter-spacing: 2px;
 }
