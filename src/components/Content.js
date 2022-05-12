@@ -33,7 +33,7 @@ export const Content = () => {
                 <p>
                 Tolist is an app desingned to give you peace of mind and confidence that everything is recorded accurately so you can move forward on the things that really matter to you.
                 </p>
-            <button class="start button letter">Start Now </button></div>
+            <button class="planning start button letter">Start Now </button></div>
         </div>
     </section>
 </main>`;
