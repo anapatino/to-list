@@ -44,9 +44,9 @@ export default class Rutine {
 
   checkStatus = (element) => {
     if (element.status == "Completed") {
-      this.actitiesListUI.innerHTML += `<div class="alert alert-alert" role="alert"><i class="material-symbols-outlined float-left mr-2">check_circle_outline</i><b id="${element.id}">${element.activity}</b> - ${element.status}<i class="float-right material-symbols-outlined">delete</i></div>`;
+      this.actitiesListUI.innerHTML += `<div class="alert alert-light" role="alert"><i class="material-symbols-outlined float-left mr-2 clickable">check_circle_outline</i><b id="${element.id}">${element.activity}</b> - ${element.status}<i class="float-right material-symbols-outlined clickable">delete</i></div>`;
     } else {
-      this.actitiesListUI.innerHTML += `<div class="alert alert-warning" role="alert"><i class="material-symbols-outlined float-left mr-2">radio_button_unchecked</i><b id="${element.id}">${element.activity}</b> - ${element.status}<i class="float-right material-symbols-outlined">delete</i></div>`;
+      this.actitiesListUI.innerHTML += `<div class="alert alert-dark" role="alert"><i class="material-symbols-outlined float-left mr-2 clickable">radio_button_unchecked</i><b id="${element.id}">${element.activity}</b> - ${element.status}<i class="float-right material-symbols-outlined clickable">delete</i></div>`;
     }
   };
 

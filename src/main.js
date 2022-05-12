@@ -1,22 +1,14 @@
-import Rutine from "./services/Rutine.js";
-import { displayMenu, fixedNavegation } from "./services/Events.js";
+import { displayMenu, renderMainPage } from "./services/events.js";
 import { App } from "./App.js";
 
 const main = () => {
-  render(App);
-  createRutine();
+  render(App, "default");
   displayMenu();
-  //fixedNavegation();
+  renderMainPage();
 };
 
-const render = (app) => {
-  document.getElementById("root").innerHTML = app();
-};
-
-const createRutine = () => {
-  const rutine = new Rutine();
-  rutine.addCreateRutineEvent();
-  rutine.addModifyRutineEvent();
+export const render = (app, display) => {
+  document.getElementById("root").innerHTML = app(display);
 };
 
 main();

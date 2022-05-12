@@ -1,19 +1,19 @@
 export const Principal = () => {
   return /*html*/ `<main id="main" class="main">
+    <div class="sizeContainer backgroundContainer"></div>
       <div id="container" class="container">
-        <h2 id="title" class="title">
+        <h2 id="title" class="titlePrincipal">
           Tasks
         </h2>
         <form id="form" class="form">
           <input
             type="text"
             id="activity"
-            class="frmcontrol"
+            class="frmcontrol text"
             placeholder="enter your task"
           ></input>
-          <button class="btnprimary">save</button>
         </form>
-        <div id="activitieslist" class="activitieslist"></div>
+        <div id="activitieslist" class="activitieslist list"></div>
       </div>
     </main>`;
 };
