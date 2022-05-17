@@ -16,19 +16,19 @@
 
 @media (max-width: 970px) {
   .activitieslist {
-    width: 600px;
+    width: 700px;
   }
-}
-
-@media (max-width: 970px) {
+  .timeSpan {
+    font-size: 19px;
+  }
+  #activity {
+    width: 400px;
+  }
   .titlePrincipal {
     font-size: 3rem;
   }
   .frmcontrol {
-    width: 350px;
-  }
-  .activitieslist {
-    width: 450px;
+    width: 250px;
   }
 }
 
@@ -41,5 +41,8 @@
   }
   .activitieslist {
     width: 420px;
+  }
+  .timeSpan {
+    font-size: 12px;
   }
 }
