@@ -1,57 +1,81 @@
-.main {
-  width: 100%;
-  margin: auto 0;
+.container{
+  margin-top: 3rem;
 }
-.container {
+hr{
+  margin: 0 0 3rem 0;
+}
+.titlePrincipal{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: 46px 74% 20%;
+  align-items: center;
+  justify-content: end;
 }
-.form {
-  grid-row: 2;
-  grid-column: 1;
+.iconTitle{
+  width: 40px;
+  height: 40px;
+  margin-right: 6px;
 }
-.activitieslist {
-  height: 400px;
+
+.timeTitle{
+  color: #8c38a5;
 }
-.list {
-  grid-row: 2;
-  grid-column: 2;
-  border-radius: 30px;
-  overflow: auto;
+
+#title{
+  color: #8c38a5;
+}
+#titleTask{
+  color: #8c38a5;
+}
+
+.inputTask{
+  margin: 0 auto 5rem auto;
+  display: flex;
+  width: 700px;
+  height: 55px;
+  background-color: #F9F8FD;
+  padding: 0 28px 0 10px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#activity{
+  width: 80%;
+  outline: none;
+  border: none;
+  background-color: #F9F8FD;
+}
+
+#activity:-webkit-autofill { 
+  -webkit-background-clip: text;
 }
 .alert {
   margin: 1rem;
   border-radius: 25px;
-}
-.title {
-  margin-bottom: 1rem;
-}
-.btnprimary {
-  width: 110px;
-  height: 40px;
-  margin-top: 2.5rem;
-  margin-left: 2rem;
-}
-.yellow {
-  background-color: $fourthColor;
-  color: aliceblue;
-  border: none;
-  border-radius: 19px;
-  letter-spacing: 2px;
-  transition-duration: 0.2s;
   cursor: pointer;
+  background-color: #F9F8FD;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
-.btnprimary:hover {
-  background-color: $primaryColor;
-}
-.frmcontrol {
-  padding: 0.6em 0.6em;
-}
-.text {
-  background: none;
+
+.btnSumit{
   border: none;
   outline: none;
-  border-bottom: 1px solid;
-  border-bottom-color: gray;
-  font-size: 1rem;
+  background-color: #8C38A5;
+  color: white;
+  margin: 1% 0;
+  width: 120px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+}
+
+.activitieslist{
+  min-height: 30vh;
+}
+#nothing{
+  text-align: center;
+  font-size: 30px;
+  color: rgba(85, 85, 85, 0.356);
 }

@@ -85,7 +85,7 @@ export default class Rutine {
       return e.target.parentNode.childNodes[1].id;
     }
     // chrome
-    return e.path[2].childNodes[1].id;
+    return e.path[1].childNodes[1].id;
   };
 
   addModifyRutineEvent = () => {
