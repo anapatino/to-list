@@ -5,11 +5,7 @@ hr {
   margin: 0 0 3rem 0;
 }
 .titlePrincipal {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: 46px 70% 24%;
-  align-items: center;
-  justify-content: end;
+  margin-top: 4rem;
 }
 .iconTitle {
   width: 40px;
@@ -59,8 +55,8 @@ hr {
 }
 
 .btnSumit {
-  border: none;
-  outline: none;
+  border: none !important;
+  outline: none !important;
   background-color: #8c38a5;
   color: white;
   margin: 1% 0;

@@ -56,6 +56,11 @@ export default class Rutine {
     });
     this.activitiesArray.splice(indexArray, 1);
     this.saveDB();
+    if (this.activitiesArray.length == 0) {
+      this.actitiesListUI.innerHTML += `<div id="activitieslist" class="activitieslist list">
+      <h3 id="nothing">Nothing yet...</h3>
+    </div>`;
+    }
   };
 
   toggleStatusChecked = (id) => {
@@ -65,7 +70,7 @@ export default class Rutine {
 
     const currentStatus = this.activitiesArray[indexArray].status;
     this.activitiesArray[indexArray].status =
-      currentStatus === "Completed" ? "Peding" : "Completed";
+      currentStatus === "Completed" ? "Pending" : "Completed";
     this.saveDB();
   };
 
