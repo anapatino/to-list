@@ -6,12 +6,12 @@ export const Headboard = () => {
     </div>
     <ul class="nListItems">
       <li class="nItem">
-        <a href="#headboard" class="nLinks">
+        <a class="nLinks principal">
           Introduction
         </a>
       </li>
       <li class="nItem">
-        <a href="#main" class="nLinks">
+        <a href="#main" class="nLinks planning">
           Planning
         </a>
       </li>
@@ -30,7 +30,7 @@ export const Headboard = () => {
         ToList is a web application designed for all types of people and its
         handling is simple and optimal.
       </p>
-      <button class="start button letter">Start Now </button>
+      <button class="planning start button letter">Start Now </button>
     </div>
     <div class="contentPicture">
        <img src="../src/image/ilustrationPh.png" id="picture">

@@ -1,67 +1,63 @@
-.container{
+.container {
   margin-top: 3rem;
 }
-hr{
+hr {
   margin: 0 0 3rem 0;
 }
-.titlePrincipal{
-  display: grid;
-  grid-template-columns: 46px 74% 20%;
-  align-items: center;
-  justify-content: end;
+.titlePrincipal {
+  margin-top: 4rem;
 }
-.iconTitle{
+.iconTitle {
   width: 40px;
   height: 40px;
   margin-right: 6px;
 }
 
-.timeTitle{
+.timeTitle {
   color: #8c38a5;
 }
 
-#title{
+#title {
   color: #8c38a5;
 }
-#titleTask{
+#titleTask {
   color: #8c38a5;
 }
 
-.inputTask{
+.inputTask {
   margin: 0 auto 5rem auto;
   display: flex;
   width: 700px;
   height: 55px;
-  background-color: #F9F8FD;
+  background-color: white;
   padding: 0 28px 0 10px;
   border-radius: 12px;
-  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px 1px rgba(161, 161, 161, 0.2);
 }
 
-#activity{
+#activity {
   width: 80%;
   outline: none;
   border: none;
-  background-color: #F9F8FD;
+  overflow: auto;
+  background-color: white;
 }
 
-#activity:-webkit-autofill { 
+#activity:-webkit-autofill {
   -webkit-background-clip: text;
 }
 .alert {
   margin: 1rem;
   border-radius: 25px;
   cursor: pointer;
-  background-color: #F9F8FD;
   border: none;
   border-radius: 12px;
-  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.btnSumit{
-  border: none;
-  outline: none;
-  background-color: #8C38A5;
+.btnSumit {
+  border: none !important;
+  outline: none !important;
+  background-color: #8c38a5;
   color: white;
   margin: 1% 0;
   width: 120px;
@@ -71,10 +67,11 @@ hr{
   text-align: center;
 }
 
-.activitieslist{
-  min-height: 30vh;
+.activitieslist {
+  height: 400px;
+  overflow: auto;
 }
-#nothing{
+#nothing {
   text-align: center;
   font-size: 30px;
   color: rgba(85, 85, 85, 0.356);

@@ -6,10 +6,10 @@ export const Footer = () => {
       <h2 class="footerTitle white">ToList</h2>
       <ul class="fNavegationList columnItems">
         <li class="nItems">
-          <a href="#headboard" class="navLinks white">Introduction</a>
+          <a href="#headboard" class="principal navLinks white">Introduction</a>
         </li>
         <li class="nItems">
-          <a href="#main" class="navLinks white">Planning</a>
+          <a href="#main" class=" planning navLinks white">Planning</a>
         </li>
         <li class="nItems">
           <a href="#footer" class="navLinks white">Contact</a>
